@@ -8,11 +8,15 @@
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org"/>
 
+    <remote name="EKRP"
+           fetch="https://github.com/EKRP"
+           revision="android-11" />
+
     <remote name="github"
             fetch="https://github.com"/>
 
     <!-- TWRP lives in TeamWin android-11 (not AOSP!) -->
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="TeamWin" revision="android-11"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="EKRP"/>
 
     <project path="build/make" name="android_build" remote="TeamWin" revision="android-11" groups="pdk">
         <copyfile src="core/root.mk" dest="Makefile"/>
