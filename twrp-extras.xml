@@ -70,8 +70,8 @@
     <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS"
              revision="lineage-18.1"/>
 
-    <!-- Use TeamWin repos for full recovery compatibility -->
-    <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin" revision="android-11" >
+    <!-- Use Eureka repos for full recovery compatibility -->
+    <project path="vendor/eureka" name="android_vendor_eureka" remote="EKRP" >
        <copyfile src="dummy/Android.mk" dest="frameworks/base/core/xsd/vts/Android.mk" />
        <copyfile src="dummy/Android.mk" dest="frameworks/base/services/core/xsd/vts/Android.mk" />
        <copyfile src="dummy/Android.mk" dest="system/libvintf/xsd/compatibilityMatrix/vts/Android.mk" />
