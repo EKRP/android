@@ -28,7 +28,7 @@
         <linkfile src="tools" dest="build/tools"/>
     </project>
 
-    <project path="build/soong" name="android_build_soong" remote="TeamWin" revision="android-11">
+    <project path="build/soong" name="android_build_soong" remote="EKRP">
         <linkfile src="root.bp" dest="Android.bp"/>
         <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
     </project>
